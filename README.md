@@ -7,6 +7,7 @@
     + stop : it stops the player
 + "open" : exec a programm ; For example "open firefox"
 + "new terminal" : exec a new terminal pressing the hotkeys
++ "terminal" : exec a shell command; For example "terminal top" 
 
 ## Install
 

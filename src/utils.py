@@ -114,8 +114,14 @@ def order_call(recognizer,record_file):
             os.system("%s" % textFromAudio)
         elif "new terminal" in textFromAudio:
             newTerminal()
+        elif "terminal" in textFromAudio:
+            newTerminal()
+            sleep(0.5)
+            pyautogui.typewrite(textFromAudio.replace("terminal",""), interval=0.5)
+            pyautogui.press("enter")
         else:
-            tex2voice("Sorry, I can't understand you")
+            print(textFromAudio)
+            tex2voice("Sorry, I can't understand: %s" % textFromAudio)
     except:
         tex2voice("Sorry, I can't hear you") #I can't hear you
 

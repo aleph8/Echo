@@ -1,6 +1,5 @@
 import speech_recognition as sr
 import utils
-
 recognizer = sr.Recognizer() #Init the audio recognizer
 record_file = sr.AudioFile('../core_records/record.wav') #Select the file
 
